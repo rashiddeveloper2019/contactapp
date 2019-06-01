@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body onload="Showdata()">
+
+<div class="container">
+  <h2>Contact form</h2>
+  
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      <!-- <button type="submit" class="btn btn-default" onclick="Contactapp()">Submit</button> -->
+    </div>
+    <div class="form-group">
+      <label for="phone">phone:</label>
+      <input type="number" class="form-control" id="phone" placeholder="Enter phone" name="phone">
+    </div>
+    <div class="form-group">
+        <label for="name">name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+      </div>
+     
+   
+    <button type="submit" class="btn btn-default" onclick="Contactapp()">Submit</button>
+    <button type="logout" class="btn btn-default" onclick="Signout()">logout</button>
+  
+</div>
+<div>
+    <table style="width: 75%">
+        <thead>
+             <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>phone</th>
+                  <th>email</th>
+                  <!-- <tr><td><button class="editbtn">edit</button></td></tr> -->
+              </tr>
+        </thead>
+        <tbody id="mytable">
+        </tbody>
+   </table>
+  </div>
+
+</body> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+<script src="javascript/home.js"></script>
+</html>
+<!-- <h1>HHHHHHHHHHHHH</h1> -->
